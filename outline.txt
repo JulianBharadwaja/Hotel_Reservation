@@ -1,0 +1,23 @@
+-Categories [with count]
+
+-Property:
+	-name
+	-location
+	-type [sale - rent]
+	-price
+	-area
+	-beds_number
+	-bath_number
+	-garages_number
+	-image
+
+-Agents:
+	-name
+	-title
+	-image
+
+-About us:
+	- images
+	- mission
+	- vision
+	
