@@ -5,9 +5,7 @@ from agents.models import Agent
 from django.db.models import Count
 # Create your views here.
 def home(request):
-	category_list = Category.objects.all()
-	# category_list = Category.objects.annotate(property_count=Count('property')).values('category_name', 'property_count', 'image')
-	# print(category_list)
+	category_list = Category.objects.annotate(property_count=Count('property')).values('category_name', 'property_count', 'image')
 	property_lists = Property.objects.all()
 	home_list = HomeModel.objects.all()
 	agent_list = Agent.objects.all()
